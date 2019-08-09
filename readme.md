@@ -67,7 +67,7 @@ database created.
 
 # Architecture
 - Diagram:-
-![]assets/architectuer.png
+![](assets/architectuer.png)
 
 
 - briefly explain the following logic layers or components (3-5 sentences for each)
