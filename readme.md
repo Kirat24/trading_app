@@ -14,14 +14,14 @@
     wide array of developers with curated financial data.
     
 # Quick Start
-- Prequiresites: 
+- **Prequiresites:** 
   * Java
    * Docker
     * PostgreSQL
     * Maven 
    * IEX to access token
 - Setting up the project
-  * Get the source code and bootstrap psq|
+  *  **Get the source code and bootstrap psq|**
 
 ```
 cd /home/centos/dev/jrvs/bootcamp
@@ -39,13 +39,12 @@ psql -h localhost -U postgres -d jrvstrading
 jrvstrading=#\dt ;
 ```
 We need  define environment var
-```
 <br/> PSQL_HOSTNAME="host of psql database"
 <br/>PSQL_USER="database user name"
  <br/>PSQL_PASSWORD="database password"
 <br/>IEX_TOKEN="IEX Market credential"
-```
-- How to consume REST API:-a controller class files which is used to redirects into the HTML file to consumes the RESTful web services.
+
+- **How to consume REST API**:-a controller class files which is used to redirects into the HTML file to consumes the RESTful web services.
 
 
 # REST API Usage
