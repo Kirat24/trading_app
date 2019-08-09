@@ -17,20 +17,34 @@
 - Prequiresites: 
   * Java
    * Docker
-    * CentOS 7
+    * PostgreSQL
     * Maven 
-    * Git clone 
-- PSQL database:- We are going to create psql database and correspondings tables using ddl files.
-you can find sql file under `sql_ddl` folder.You can use following line of code to create database from sql files.
+   * IEX to access token
+- Setting up the project
+  * Get the source code and bootstrap psq|
+
 ```
-psql -h $PSQL_HOST -U $PSQL_USER -f ./sql_ddl/init_db.sql(file name or path to the file)
+cd /home/centos/dev/jrvs/bootcamp
+git clone https://github.com/jarvisgroup/trading_app.git
+cd trading_app
+wdir=`pwd`
+cd $wdir/init
+# create database
+psql -h localhost -U postgres -f init_db.sql
+# create tables
+cd $wdir/src/main/resources
+psql -h localhost -U postgres -d jrvstrading -f schema.sql
+# verify
+psql -h localhost -U postgres -d jrvstrading
+jrvstrading=#\dt ;
 ```
 We need  define environment var
+```
 <br/> PSQL_HOSTNAME="host of psql database"
 <br/>PSQL_USER="database user name"
  <br/>PSQL_PASSWORD="database password"
 <br/>IEX_TOKEN="IEX Market credential"
-
+```
 - How to consume REST API:-a controller class files which is used to redirects into the HTML file to consumes the RESTful web services.
 
 
