@@ -31,9 +31,7 @@ wdir=`pwd`
 cd $wdir/init
 # create database
 psql -h localhost -U postgres -f init_db.sql
-```
-<span style="color:red">#create tables</span>
-```
+#create tables
 cd $wdir/src/main/resources
 psql -h localhost -U postgres -d jrvstrading -f schema.sql
 # verify
