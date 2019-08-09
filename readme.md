@@ -1,4 +1,4 @@
-#TRADING APP
+# TRADING_APP
 # Introduction
 -  It is  an online stock trading simulation REST API which can be  used by traders  to sell or buy stocks in the market. and who can use this API .It supplies IES quoting and trading data.
 - Technologies used in building this micro-service is:-
