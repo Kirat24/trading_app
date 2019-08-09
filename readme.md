@@ -96,6 +96,7 @@ database created.
 # Improvements
 - how to manage quote data  when market closes.
 - Mobile tool to improve trading results.
-- A trail video to teach new investors how manage their finan
+- A trail video to teach new investors how manage their finan.
 - Best Security practice to avoid any data breach
 - Show performance statistics based on your portfolio.
+- Link it with Twitter app
